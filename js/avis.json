@@ -1,0 +1,17 @@
+[
+  {
+    "nom": "Léa Martin",
+    "avis": "⭐️⭐️⭐️⭐️⭐️",
+    "description": "Service au top ! J’ai reçu ma planche en 3 jours, super bien emballée. Je recommande à 100%."
+  },
+  {
+    "nom": "Thomas Dubois",
+    "avis": "⭐️⭐️⭐️⭐️⭐️",
+    "description": "Large choix de produits et conseils très pros. Juste un petit délai de livraison, sinon parfait."
+  },
+  {
+    "nom": "Sophie Lefèvre",
+    "avis": "⭐️⭐️⭐️⭐️⭐️",
+    "description": "J’adore cette boutique ! Leur sélection est superbe et le service client est hyper réactif."
+  }
+]

@@ -55,6 +55,12 @@ ul {
   padding: 8px;
   border-radius: 3px;
   background-color: #00b098;
+  transition: 0.3s;
+}
+
+.navbar .right a:hover {
+  transition: 0.3s;
+  box-shadow: 1px 3px 18px -3px rgba(0, 0, 0, 0.75);
 }
 
 .welcome img {
@@ -141,13 +147,17 @@ footer .leftSide {
 }
 
 footer .leftSide img {
-  width: 40px;
+  width: 70px;
   height: auto;
 }
 
 footer p {
   max-width: 600px;
   font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
 }
 
 .contact {
@@ -193,7 +203,8 @@ footer p {
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
+    margin-bottom: 20px;
   }
 
   .main_content,
@@ -206,5 +217,76 @@ footer p {
   .navbar .left,
   .navbar .right {
     margin: 0;
+  }
+}
+
+.mentions-legales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.avis {
+  max-width: 900px;
+  margin: 0 auto 6rem auto;
+  padding: 0 20px;
+  font-family: "Original Surfer", cursive, sans-serif;
+  color: #222;
+}
+
+.avis h2 {
+  font-size: 2.5rem;
+  color: #00c9a7;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.avis-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.avis-item {
+  background: #e0f2f1;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  padding: 1.8rem 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avis-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+}
+
+.avis-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  color: #004d40;
+}
+
+.avis-item .stars {
+  font-size: 1.3rem;
+  color: #ffb400;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.avis-item .description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .avis-list {
+    grid-template-columns: 1fr;
   }
 }
